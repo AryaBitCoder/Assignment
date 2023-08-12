@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        if else problems
+    </title>
+    <link rel="stylesheet", href="assignment_topics.css">
+    <link rel="stylesheet" href="common-all-pages.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="main_page.html">
+            <img class="logo-image" src="images/logo png.png">
+        </a>
+    </div>
+    <div class="waterdrop-container"></div>
+
+    <h1>If Else
+    </h1>
+
+    <h2>Conceptual Problems</h2>
+    <div class="problem-statement-main-box">
+
+        <p>1. What is conditional statement? Why we call it conditional statement?</p>
+        <p>2. What is the purpose of the ternary operator (?:) in C, and how it is used. Write an example to understand ternary operators. </p>
+        <p>3. What is switch case statement and how it is different from if-else statement.</p>
+        <p>2. Explain the concept of an "if-else if" ladder. Provide a detailed example to demonstrate its usage.</p>
+        <p>4. Find the output of the following code snippets. </p>
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                1
+            </div>
+<pre class="code-snippet-box-content">
+int x = 10, y = 20;
+if (x > y) {
+    printf("A");
+} else if (x < y) {
+    printf("B");
+} else {
+    printf("C");
+}
+</pre>
+        </div>
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                2
+            </div>
+<pre class="code-snippet-box-content">
+char grade = 'B';
+switch (grade)
+{
+    case 'A':
+        printf("Excellent");
+        break;
+    case 'B':
+        printf("Good");
+        break;
+    case 'C':
+        printf("Average");
+        break;
+    default:
+        printf("Needs Improvement");
+}
+</pre>
+        </div>
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                3
+            </div>
+<pre class="code-snippet-box-content">
+int a = 10;
+float b = 2.0;
+switch(a / b)
+{
+    case 0:
+        printf("Zero");
+        break;
+    default:
+        printf("Non-zero");
+}
+</pre>
+        </div>
+
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                4
+            </div>
+<pre class="code-snippet-box-content">
+int a = 1;
+switch(a)
+{
+    case 0:
+        printf("Zero");
+    case 1:
+        printf("One");
+    case 2:
+        printf("Two");
+        break;
+    default:
+        printf("Non-zero");
+}
+</pre>
+        </div>
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                5
+            </div>
+<pre class="code-snippet-box-content">
+switch((10 > 2) + (10 < 2) + (10 >= 2))
+{
+    case 0:
+        printf("Zero");
+        break;
+    case 1:
+        printf("One");
+        break;
+    case 2:
+        printf("Two");
+        break;
+    default:
+        printf("Other");
+}
+</pre>
+        </div>
+
+        <div class="code-snippet-box">
+            <div class="code-snippet-box-si">
+                6
+            </div>
+<pre class="code-snippet-box-content">
+int a = 15, b = 20;
+int result = (a > b) ? (a - b) : (b - a);
+printf("%d\n", result);
+</pre>
+        </div>
+
+    <div class="code-snippet-box">
+        <div class="code-snippet-box-si">
+            7
+        </div>
+<pre class="code-snippet-box-content">
+int p = 8, q = 5, r = 12;
+int max = (p > q) ? ((p>r) ? p : r) : ((q>r) ? q : r);
+printf("%d\n", max);
+</pre>
+    </div>
+
+</div>
+
+<h2>Problems</h2>
+
+    <div class="problem-statement-main-box">
+    
+        <p>1. Write a program that takes an integer input from the user and checks if it is even or odd. Display an appropriate message. </p>
+        <p>2. Write a program that takes an integer as input and prints whether it's positive, negative or zero.</p>
+        <p>3. Write a program to find the greatest and smallest values among three integers entered by the user. </p>
+        <p>4. Write a program to find greatest and smallest values between two integers entered by the user.</p>
+        <p>5. Write a program to find middle element among three integers entered by the user. </p>
+        <p>6. Write a program to check whether a character is an alphabet, digit or special character. </p>
+        <p>7. Write a program to check whether a character is an uppercase letter, lowercase letter, or a digit. </p>
+        <p>8. Write a C program that takes a character as input and determines whether it's a vowel (a, e, i, o, u) or a consonant. </p>
+        <p>9. Write a C program that takes a character as input from the user. If the entered character is an alphabet, convert the case of the alphabet and display a message
+            indicating that it is an alphabet along with the updated alphabet. If the entered character is a digit, display the message indicating it is a digit. </p>
+            <div class="code-snippet-box">
+    <pre class="code-snippet-box-content">
+Enter a character: G
+The entered character 'G' is an alphabet. Updated alphabet: g
+
+Enter a character: 5
+The entered chacter '5' is a digit.
+    </pre>
+            </div>
+
+        <p>10. Create a C program that prompts the user to enter a day number (1 to 7) and prints the corresponding day of the week
+            (e.g., 1 for Sunday, 2 for Monday, etc.). Use switch case statement.
+        </p>
+        <p>11. Write a C program that calculates the total fare for a taxi ride based on the distance traveled. The fare is calculated as follows:</p>
+        <div class="problem-statement-sub-box">
+            <p><strong>&centerdot;</strong> The first 5 kilometer cost &dollar;10.</p>
+            <p><strong>&centerdot;</strong> Each additional kilometer costs &dollar;2.</p>
+            <p><strong> </strong> Implement this using if-else statements.</p>
+        </div>
+        <p>12. Develop a C program that allows a user to input a month number (1 to 12) and displays the number of days in that month. Use swich case statements.</p>
+        <p>13. Write a C program to read temperature in centigrade and display a suitable message according to the temperature stated below:</p>
+        <div class="problem-statement-sub-box">
+            <p><strong>&centerdot;</strong> Temp < 0, then display message: <i>Very Cold weather</i>.</p>
+            <p><strong>&centerdot;</strong> Temp 10 - 20, then display message: <i>Cold weather</i>.</p>
+            <p><strong>&centerdot;</strong> Temp 20 - 30, then display message: <i>Normal temperature</i>.</p>
+            <p><strong>&centerdot;</strong> Temp 30 - 40, then display message: <i>It's Hot</i>.</p>
+            <p><strong>&centerdot;</strong> Temp >= 40, then display message: <i>It's Very Hot</i>.</p>
+        </div>
+
+    </div>
+
+    <script src="common-all-pages.js"></script>
+
+</body>
+</html>
